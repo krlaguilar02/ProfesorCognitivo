@@ -1,27 +1,29 @@
-<!DOCTYPE HTML>
-<!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
-	<head>
-		<title>Profesor Cognitivo¡!!!</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Profesor Cognitivo</title>
+<LINK REL="StyleSheet" HREF="assets/css/main.css" TYPE="text/css" MEDIA=screen>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Bootstrap Core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="simple-sidebar.css" rel="stylesheet">
 
-		<!-- Wrapper -->
+
+</head>
+
+<body>
+
+<!-- Wrapper -->
 			<div id="wrapper">
 
 				<!-- Header -->
 					<header id="header">
 						<div class="logo">
-							<span class="icon fa-diamond"></span>
+							<i class="icon fa-diamond"></i>
 						</div>
 						<div class="content">
 							<div class="inner">
@@ -29,26 +31,74 @@
 							</div>
 						</div>
 						<div>
+						<nav>
+							<ul>
+							<li><a href="#registro">Registrarse</a></li>
+							</ul>
+						</nav>
+						</div>
+						<div>
 							<h2>Ingresar como</h2>
 						</div>
 						<nav>
 							<ul>
-								<li><a href="#intro">Administrador</a></li>
-								<li><a href="#work">Estudiante</a></li>
+								<li><a href="InicioSesion.html">Administrador</a></li>
+								<li><a href="#est">Estudiante</a></li>
 							</ul>
 						</nav>
 					</header>
 
 				<!-- Main -->
 					<div id="main">
-
-						<!-- Intro -->
-							<article id="intro">
-								<h2 class="major">Intro</h2>
-								<span class="image main"><img src="images/pic01jpg" alt="" /></span>
-								<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <a href="#work">awesome work</a>.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
+					
+							<article id="registro">
+								<h3 class="major">Registro</h3>
+									<form name = "formulario registro" action="controladorRegistro" method="post">
+										<div class="field half first">
+											<label for="demo-name">Nombre</label>
+											<input type="text" name="nombre" id="nombre" value="" placeholder="Nombre" />
+										</div>
+										<div class="field half">
+											<label for="apellido1">Primer Apellido</label>
+											<input type="text" name="apellido1" id="apellido1" value="" placeholder="Primer Apellido" />
+										</div>
+										<div class="field half first">
+											<label for="apellido2">Segundo Apellido</label>
+											<input type="text" name="apellido2" id="apellido2" value="" placeholder="Segundo Apellido" />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="email" name="email" id="email" value="" placeholder="nombre@gmail.com" />
+										</div>
+										<div class="field half first">
+											<label for="identificacion">Identificacion</label>
+											<input type="text" name="identificacion" id="identificacion" 
+											value="" placeholder="111111111" />
+										</div>
+										<div class="field half">
+											<label for="demo-email">Carnet</label>
+											<input type="text" name="carnet" id="carnet" 
+											value="" placeholder="2000111111" />
+										</div>
+										<div class="field half first">
+											<label for="demo-email">Fecha de Nacimiento</label>
+											<input type="date" name="fecha" id="fecha" 
+											value="" style="color:rgb(0,0,0);"/>
+										</div>
+										<script>
+											function functionAlert (){
+												alert("Se ha registrado correctamente");
+											}
+										</script>
+										<ul class="actions">
+											<li><input type="submit" value="Registrar Estudiante" class="special"  onclick="location='InicioSesion.html'"/></li>
+										</ul>
+										</form>
+										
 							</article>
+
+
+alert(persona.getNombre())
 
 						<!-- Work -->
 							<article id="work">
@@ -58,9 +108,6 @@
 								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
 							</article>
 
-
-				</code></pre>
-								</section>
 
 								<section>
 									<h3 class="major">Lists</h3>
